@@ -1,14 +1,7 @@
-invoice_processor/
-│
-├── app.py                     # Flask backend
-├── extractor.py               # PDF + ML extraction logic
-├── ocr_extractor.py           # OCR fallback extraction (Tesseract)
-├── ml_model/
-│   └── layoutlm_extractor.py  # LayoutLMv3 ML extraction
-├── templates/
-│   └── index.html             # Frontend HTML
-├── static/
-│   ├── style.css              # CSS
-│   └── script.js              # JS for upload/save
-├── uploads/                   # Folder to save uploaded files
-└── requirements.txt           # Python dependencies
+Flask==2.3.2
+pytesseract==0.3.10
+pdf2image==1.16.3
+torch==2.1.0
+transformers==4.36.2
+Pillow==10.0.0
+pdfplumber==0.10.1
